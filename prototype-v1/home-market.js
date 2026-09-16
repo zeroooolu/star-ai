@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
+  const storyTitle=document.querySelector('.story-copy h2');
+  if(storyTitle)storyTitle.innerHTML='发行流程，<br>3 步完成。';
+
   const root=document.querySelector('[data-market-calculator]');
   if(!root)return;
 
@@ -15,7 +18,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const amount=tracks*channelTotal;
     if(trackCount)trackCount.textContent=tracks;
     if(channelCount)channelCount.textContent=channelTotal;
-    if(units)units.textContent=`${amount} 次发行额度`;
+    if(units)units.textContent=`${amount} 次`;
     if(total)total.textContent=`¥${amount}`;
     if(cta)cta.textContent=amount?`¥${amount} 开始发行`:'选择发行渠道';
     root.querySelectorAll('[data-market-channel]').forEach(btn=>{
