@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>新建发行｜AI 音乐发行｜星球发行</title>
+<title>新建发行｜音乐发行｜星球发行</title>
 <link rel="stylesheet" href="/prototype-v1/styles.css">
 <link rel="stylesheet" href="/prototype-v1/brand-v2.css">
 <link rel="stylesheet" href="/prototype-v1/dashboard-v1.css?v=20260910b">
@@ -11,7 +11,7 @@
 <body class="product-app release-app" data-release-builder>
 <div class="app-frame">
   <aside class="sidebar">
-    <div class="sidebar-brand"><a href="/app" class="brand-link"><img src="/assets/star-logo.png" alt="星球发行"><span class="brand-divider"></span><span>AI 音乐发行</span></a></div>
+    <div class="sidebar-brand"><a href="/app" class="brand-link"><img src="/assets/star-logo.png" alt="星球发行"><span class="brand-divider"></span><span>音乐发行</span></a></div>
     <nav class="side-nav" aria-label="产品导航">
       <a class="nav-item" href="/app"><svg viewBox="0 0 24 24"><path d="M4 13h6V4H4v9Zm0 7h6v-5H4v5Zm10 0h6v-9h-6v9Zm0-16v5h6V4h-6Z"/></svg><span>工作台</span></a>
       <div class="nav-group"><div class="nav-group-title">发行</div>
@@ -24,72 +24,68 @@
         <a class="nav-item" href="/app/earnings"><svg viewBox="0 0 24 24"><path d="M12 3v18M16 7.5c0-2-1.6-3-4-3s-4 1.1-4 3 1.4 2.8 4 3.5 4 1.6 4 3.6-1.7 3.4-4.2 3.4S7.5 16.9 7.5 15"/></svg><span>收益</span></a>
       </div>
       <div class="nav-group"><div class="nav-group-title">账户</div>
-        <a class="nav-item" href="/app/billing"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 15h4"/></svg><span>订阅与账单</span></a>
+        <a class="nav-item" href="/app/billing"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 15h4"/></svg><span>发行额度与账单</span></a>
         <a class="nav-item" href="/app/settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.5-2-3.4-2.4 1A7 7 0 0 0 14.8 6L14.5 3h-5L9.2 6a7 7 0 0 0-1.7 1.1l-2.4-1-2 3.4L5.1 11a7 7 0 0 0 0 2l-2 1.5 2 3.4 2.4-1A7 7 0 0 0 9.2 18l.3 3h5l.3-3a7 7 0 0 0 1.7-1.1l2.4 1 2-3.4-2-1.5c.1-.3.1-.7.1-1Z"/></svg><span>设置</span></a>
       </div>
     </nav>
-    <div class="sidebar-foot"><a href="/platforms" class="support-link"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg><span>平台规则</span></a><button class="account-card" type="button"><span class="avatar">KJ</span><span class="account-copy"><strong>Kanjian Music</strong><small>全球发行订阅</small></span><svg class="chevron" viewBox="0 0 24 24"><path d="m9 10 3 3 3-3"/></svg></button></div>
+    <div class="sidebar-foot"><a href="/platforms" class="support-link"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg><span>平台规则</span></a><button class="account-card" type="button"><span class="avatar">KJ</span><span class="account-copy"><strong>Kanjian Music</strong><small>发行额度 328 次</small></span><svg class="chevron" viewBox="0 0 24 24"><path d="m9 10 3 3 3-3"/></svg></button></div>
   </aside>
 
   <main class="workspace">
-    <header class="workspace-topbar"><div class="mobile-brand"><img src="/assets/star-logo.png" alt="星球发行"><span>AI 音乐发行</span></div><div class="topbar-spacer"></div><button class="icon-button" type="button" aria-label="通知"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg><span class="notification-dot"></span></button></header>
+    <header class="workspace-topbar"><div class="mobile-brand"><img src="/assets/star-logo.png" alt="星球发行"><span>音乐发行</span></div><div class="topbar-spacer"></div><button class="icon-button" type="button" aria-label="通知"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg><span class="notification-dot"></span></button></header>
     <div class="workspace-body">
-      <div class="builder-head"><div><h1>新建发行</h1><p>从发行版本、作品和权利信息开始，完成平台资格判断后进入付款与交付。</p></div><a class="save-draft" href="/app/releases">保存草稿</a></div>
+      <div class="builder-head"><div><h1>新建发行</h1><p>完善作品资料，选择发行渠道，确认价格后提交。</p></div><a class="save-draft" href="/app/releases">保存草稿</a></div>
       <div class="release-progress" aria-label="发行流程">
-        <span class="active"><b>1</b>发行信息</span><span><b>2</b>音频与封面</span><span><b>3</b>艺人与权利</span><span><b>4</b>AI 使用情况</span><span><b>5</b>发行平台</span><span><b>6</b>发行时间</span><span><b>7</b>确认付款</span>
+        <span class="active"><b>1</b>创建发行</span><span><b>2</b>完善作品资料</span><span><b>3</b>选择发行渠道</span><span><b>4</b>付费并提交</span>
       </div>
 
       <div class="builder-layout">
         <div class="builder-main">
           <section class="form-card">
-            <div class="form-card-head"><div class="step-dot">01</div><div><h2>发行信息</h2><p>先确定发行版本类型和基础元数据，后续平台信息以此为基础。</p></div></div>
+            <div class="form-card-head"><div class="step-dot">01</div><div><h2>发行信息</h2><p>填写发行版本和基础元数据。</p></div></div>
             <div class="release-type-grid"><div class="release-option active"><strong>单曲</strong><span>1 首歌曲</span></div><div class="release-option"><strong>EP</strong><span>2–6 首歌曲</span></div><div class="release-option"><strong>专辑</strong><span>7 首及以上</span></div></div>
             <div class="inline-fields"><div class="field"><label>发行名称</label><input class="input" value="Blue Hour"></div><div class="field"><label>版本类型</label><select class="select"><option>标准版</option><option>豪华版</option><option>重制版</option></select></div></div>
           </section>
 
           <section class="form-card">
-            <div class="form-card-head"><div class="step-dot">02</div><div><h2>音频与封面</h2><p>上传最终发行母带和封面。音频文件在正式提交前完成格式与质量检查。</p></div></div>
+            <div class="form-card-head"><div class="step-dot">02</div><div><h2>音频与封面</h2><p>上传最终发行母带和封面，提交前自动检查格式与基础质量。</p></div></div>
             <div class="upload-box"><div class="upload-icon">↑</div><strong>把 WAV / FLAC 文件拖到这里</strong><p>建议 24-bit WAV · 44.1 kHz 或更高 · 单文件不超过 2GB</p><button class="ghost-action">选择音乐文件</button></div>
-            <div class="cover-upload"><div class="cover-placeholder">COVER</div><div class="cover-copy"><strong>发行封面</strong><p>建议正方形 JPG / PNG，至少 3000 × 3000 px，不包含平台 Logo、网址或误导性文字。</p><button class="ghost-action">上传封面</button></div></div>
+            <div class="cover-upload"><div class="cover-placeholder">COVER</div><div class="cover-copy"><strong>发行封面</strong><p>建议正方形 JPG / PNG，至少 3000 × 3000 px。</p><button class="ghost-action">上传封面</button></div></div>
             <div class="field-grid"><div class="field"><label>歌曲名</label><input class="input" value="Blue Hour"></div><div class="field"><label>歌曲语言</label><select class="select"><option>中文</option><option>英文</option><option>纯音乐</option></select></div><div class="field"><label>音乐类型</label><select class="select"><option>Pop</option><option>Electronic</option><option>Hip-Hop</option><option>Other</option></select></div><div class="field"><label>是否包含歌词</label><select class="select"><option>是</option><option>否</option></select></div></div>
           </section>
 
           <section class="form-card">
-            <div class="form-card-head"><div class="step-dot">03</div><div><h2>艺人与权利</h2><p>确认参与发行的艺人、创作者及录音和词曲权利信息。</p></div></div>
+            <div class="form-card-head"><div class="step-dot">03</div><div><h2>艺人、权利与创作方式</h2><p>确认参与发行的艺人、创作者、录音和词曲权利；创作方式只用于平台资格判断，不影响价格。</p></div></div>
             <div class="rights-row"><strong>主要艺人</strong><span>Mira</span><span>主要艺人</span></div><div class="rights-row"><strong>词曲创作者</strong><span>Mira Chen</span><span>词 / 曲</span></div><div class="rights-row"><strong>录音权利方</strong><span>Kanjian Music</span><span>2026</span></div>
             <a class="add-link" href="#">＋ 添加参与者或权利方</a>
             <div class="rights-grid" style="margin-top:16px"><div class="release-option active"><strong>录音权利已确认</strong><span>具备本录音的商业发行权。</span></div><div class="release-option active"><strong>词曲权利已确认</strong><span>具备词曲发行所需授权。</span></div><div class="release-option active"><strong>艺人身份已确认</strong><span>艺人名称和身份信息真实有效。</span></div></div>
+            <div class="ai-detail-box" style="margin-top:18px"><h3>创作方式</h3><div class="radio-grid"><label class="radio-card" data-ai-mode="none"><input type="radio"><i class="radio-mark"></i><strong>未使用生成式 AI</strong><span>传统创作和制作流程。</span></label><label class="radio-card active" data-ai-mode="assisted"><input type="radio"><i class="radio-mark"></i><strong>使用过 AI 辅助</strong><span>部分创作或制作环节使用 AI。</span></label><label class="radio-card" data-ai-mode="full"><input type="radio"><i class="radio-mark"></i><strong>主要由 AI 生成</strong><span>生成式 AI 构成作品主要部分。</span></label></div><div class="inline-fields" style="margin-top:14px"><div class="field"><label>主要 AI 工具（如有）</label><input class="input" value="Suno"></div><div class="field"><label>商业使用权</label><select class="select"><option>已确认</option><option>需要补充确认</option></select></div></div></div>
+            <div class="tiny-tip">未经授权模仿真人声线、冒充艺人、侵权或批量高度相似内容可能无法发行。</div>
           </section>
 
           <section class="form-card">
-            <div class="form-card-head"><div class="step-dot">04</div><div><h2>AI 使用情况</h2><p>AI 使用情况不影响价格，用于判断平台声明、发行资格和潜在限制。</p></div></div>
-            <div class="radio-grid"><label class="radio-card" data-ai-mode="none"><input type="radio"><i class="radio-mark"></i><strong>没有使用生成式 AI</strong><span>作品主要由传统创作和制作流程完成。</span></label><label class="radio-card active" data-ai-mode="assisted"><input type="radio"><i class="radio-mark"></i><strong>使用过 AI 辅助</strong><span>歌词、编曲、人声或制作中的部分环节使用了 AI。</span></label><label class="radio-card" data-ai-mode="full"><input type="radio"><i class="radio-mark"></i><strong>主要由 AI 自动生成</strong><span>生成式 AI 构成录音或创作的主要部分。</span></label></div>
-            <div class="ai-detail-box"><h3>AI 使用环节</h3><div class="ai-checks"><label><input type="checkbox" checked>作曲 / 编曲</label><label><input type="checkbox">歌词</label><label><input type="checkbox" checked>声音 / 人声</label><label><input type="checkbox">混音 / 母带</label><label><input type="checkbox">封面</label></div><div class="inline-fields"><div class="field"><label>主要 AI 工具</label><input class="input" value="Suno"></div><div class="field"><label>商业使用权</label><select class="select"><option>已确认</option><option>需要补充确认</option></select></div></div></div>
-            <div class="tiny-tip">提交发行即确认已具备录音、词曲及商业发行所需权利。未经授权模仿真人声线、冒充艺人、侵权或批量高度相似内容可能无法发行。</div>
+            <div class="form-card-head"><div class="step-dot">04</div><div><h2>选择发行渠道</h2><p>1 首歌曲发行到 1 个渠道消耗 1 次发行额度。系统只允许选择当前实际符合资格的渠道。</p></div></div>
+            <div class="channel-toolbar"><div class="tabs"><button class="active" data-scope="core">主流渠道</button><button data-scope="more">更多渠道</button></div><div class="channel-count">已选 <strong data-selected-count>9</strong> 个渠道</div></div>
+            <div class="channel-toolbar" style="margin-top:10px"><div class="tabs"><button class="active" data-region="all">全部</button><button data-region="cn">中国</button><button data-region="global">全球</button></div></div>
+            <div class="channels" data-channels></div>
+            <div class="platform-result-note"><span>平台规则会持续变化，提交前再次确认最终可发行范围。</span><a href="/platforms">查看平台规则 →</a></div>
           </section>
 
           <section class="form-card">
-            <div class="form-card-head"><div class="step-dot">05</div><div><h2>选择发行平台</h2><p>根据已填写信息实时标出平台资格，以及收益、推荐或声明限制。</p></div></div>
-            <div class="channel-toolbar"><div class="tabs"><button class="active" data-region="all">全部平台</button><button data-region="cn">国内</button><button data-region="global">海外</button></div><div class="channel-count">已选 <strong data-selected-count>10</strong> 个平台</div></div><div class="channels" data-channels></div>
-            <div class="platform-result-note"><span>平台规则会持续变化，付款前再次确认最终可发行范围。</span><a href="/platforms">查看平台规则 →</a></div>
-          </section>
-
-          <section class="form-card">
-            <div class="form-card-head"><div class="step-dot">06</div><div><h2>发行时间与服务</h2><p>设置计划发行日期，并确认发行服务时间。</p></div></div>
-            <div class="schedule-grid"><div class="schedule-card active"><strong>尽快发行</strong><span>审核完成后进入平台交付。</span></div><div class="schedule-card"><strong>指定发行日</strong><span>统一设置全球上线日期。</span></div><div class="schedule-card"><strong>已有发行版本</strong><span>迁移或重新交付已有作品。</span></div></div>
+            <div class="form-card-head"><div class="step-dot">05</div><div><h2>发行时间</h2><p>设置计划发行日期，不再选择服务年限。</p></div></div>
+            <div class="schedule-grid"><div class="schedule-card active"><strong>尽快发行</strong><span>审核完成后进入平台交付。</span></div><div class="schedule-card"><strong>指定发行日</strong><span>设置计划上线日期。</span></div><div class="schedule-card"><strong>已有发行版本</strong><span>迁移或重新交付已有作品。</span></div></div>
             <div class="inline-fields"><div class="field"><label>计划发行日期</label><input class="input" value="2026-09-18"></div><div class="field"><label>版权年份</label><input class="input" value="2026"></div></div>
-            <div class="term-grid" style="margin-top:16px"><div class="term active" data-term="1"><strong>1 年</strong><small>最灵活</small></div><div class="term" data-term="3"><strong>3 年</strong><small>一次购买 3 年</small></div><div class="term" data-term="5"><strong>5 年</strong><small>一次购买 5 年</small></div></div>
           </section>
         </div>
 
         <aside class="summary">
-          <div class="summary-card"><div class="summary-title">发行确认</div><div class="summary-track"><div class="cover"></div><div><strong>Blue Hour</strong><small>Mira · 单曲 · 1 首</small></div></div><ul class="summary-checklist"><li>音频与封面已填写</li><li>艺人与权利信息已确认</li><li>AI 使用情况已填写</li><li>平台资格已完成预检</li></ul><div class="summary-lines"><div class="summary-line"><span>购买方式</span><strong>按量发行</strong></div><div class="summary-line"><span>发行平台</span><strong data-summary-channels>10 个</strong></div><div class="summary-line"><span>服务时间</span><strong data-summary-term>1 年</strong></div><div class="summary-line"><span>单价</span><strong>¥1 / 首 / 平台 / 年</strong></div></div><div class="total"><div><small>应付金额</small></div><strong data-summary-total>¥10<span> / 本次</span></strong></div></div>
-          <div class="recommend" data-sub-recommend></div>
-          <a class="btn btn-primary btn-lg" href="#">确认信息并付款</a><div class="legal">付款前再次展示平台发行资格和重要限制。最终上线时间以音乐平台处理结果为准。</div>
+          <div class="summary-card"><div class="summary-title">发行确认</div><div class="summary-track"><div class="cover"></div><div><strong>Blue Hour</strong><small>Mira · 单曲 · 1 首</small></div></div><ul class="summary-checklist"><li>作品资料已填写</li><li>艺人与权利信息已确认</li><li>创作方式已填写</li><li>平台资格已完成预检</li></ul><div class="summary-lines"><div class="summary-line"><span>发行平台</span><strong data-summary-channels>9 个</strong></div><div class="summary-line"><span>需要发行额度</span><strong data-summary-units>9 次</strong></div><div class="summary-line"><span>单价</span><strong>¥1 / 首 / 渠道</strong></div><div class="summary-line"><span>当前额度</span><strong>328 次</strong></div><div class="summary-line"><span>提交后剩余</span><strong data-balance-after>319 次</strong></div></div><div class="total"><div><small>本次标准价格</small></div><strong data-summary-total>¥9<span> / 本次</span></strong></div></div>
+          <div class="recommend"><div class="top"><strong>余额优先抵扣</strong><span class="tag">发行额度</span></div><p>当前余额足够，本次无需额外支付。额度不足时只补足差额即可。</p></div>
+          <a class="btn btn-primary btn-lg" href="#">确认并提交发行</a><div class="legal">进入正式渠道交付后才消耗对应发行额度；技术失败重试不会重复扣费。</div>
         </aside>
       </div>
     </div>
   </main>
 </div>
-<script src="/prototype-v1/app-v2.js?v=20260910b"></script>
+<script src="/prototype-v1/app-v2.js?v=20260916"></script>
 </body></html>
