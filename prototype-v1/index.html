@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="/prototype-v1/styles.css">
 <link rel="stylesheet" href="/prototype-v1/brand-v2.css">
 <link rel="stylesheet" href="/prototype-v1/home-v6-distribute.css?v=20260910">
+<link rel="stylesheet" href="/prototype-v1/home-market.css?v=20260916">
 </head>
 <body class="home-v3">
 <header class="nav home-nav">
@@ -24,9 +25,9 @@
     <div class="container hero-grid">
       <div class="hero-copy-wrap">
         <h1>音乐发行，<br><em>付费就能发。</em></h1>
-        <p class="hero-copy">上传音乐，选择发行平台，按实际发行次数付费。1 首歌发行到 1 个平台，只需 ¥1；通过内容与权利审核后进入平台交付。</p>
-        <div class="hero-actions"><a class="btn btn-primary btn-lg" href="/release">开始发行 <span>→</span></a><a class="btn btn-secondary btn-lg" href="/pricing">查看价格</a></div>
-        <div class="hero-points hero-points-v3"><span><i>✓</i>¥1 / 首 / 渠道</span><span><i>✓</i>没有订阅</span><span><i>✓</i>普通音乐与 AI 音乐同价</span><span><i>✓</i>收益 100% 归用户</span></div>
+        <p class="hero-copy">无需签约、无需订阅。上传音乐，选择发行平台，按实际发行次数付费；通过内容与权利审核后进入平台交付。</p>
+        <div class="hero-actions"><a class="btn btn-primary btn-lg" href="/release">开始发行 <span>→</span></a><a class="btn btn-secondary btn-lg" href="#calculator">算算要多少钱</a></div>
+        <div class="hero-points hero-points-v3"><span><i>✓</i>¥1 / 首 / 渠道</span><span><i>✓</i>没有订阅</span><span><i>✓</i>普通音乐与 AI 音乐同价</span><span><i>✓</i>标准数字发行收益 100% 归用户</span></div>
       </div>
 
       <div class="release-passport" aria-label="发行价格示意">
@@ -42,11 +43,27 @@
     </div>
   </section>
 
+  <section class="trust-section" aria-label="看见音乐与星球发行能力">
+    <div class="container">
+      <div class="trust-intro">
+        <div><span class="market-kicker">KANJIAN MUSIC · SINCE 2012</span><h2>专业音乐发行能力，<br>现在可以直接自助使用。</h2></div>
+        <p><strong>星球发行是看见音乐旗下音乐发行服务。</strong>看见音乐自 2012 年持续建设音乐资产管理、分发与结算能力；星球发行自 2015 年上线，并长期通过 DDEX 等标准化技术连接音乐内容与全球渠道。</p>
+      </div>
+      <div class="trust-stats">
+        <div class="trust-stat"><strong>4000 万+</strong><span>看见音乐平台承载的全球音乐声音资产</span></div>
+        <div class="trust-stat"><strong>100 万+</strong><span>全球音乐创作者</span></div>
+        <div class="trust-stat"><strong>48 万+</strong><span>全球公司与内容机构</span></div>
+        <div class="trust-stat"><strong>400+</strong><span>看见音乐整体网络智能化接入的主流音乐渠道</span></div>
+      </div>
+      <p class="trust-note">以上为看见音乐官网公开的整体平台数据；本自助发行产品实际可选渠道以当前“支持平台”和具体作品发行资格为准。</p>
+    </div>
+  </section>
+
   <section class="distribution-section" id="channels">
     <div class="container distribution-shell">
       <div class="distribution-head">
         <div class="distribution-title"><span class="distribution-kicker">主流发行渠道</span><h2>你想发哪里，<br><em>就选哪里。</em></h2></div>
-        <div class="distribution-copy"><p>首页只展示最常用的主流平台。更多渠道仍然可以选择，但不再用“平台数量”制造复杂感。</p><div class="distribution-actions"><a class="distribution-primary" href="/platforms">查看支持平台 →</a><a class="distribution-secondary" href="/release">开始发行</a></div></div>
+        <div class="distribution-copy"><p>优先覆盖音乐人最常使用的中国与全球主流音乐平台。系统会先根据作品权利和内容属性判断实际可发行范围，再让你选择并付费。</p><div class="distribution-actions"><a class="distribution-primary" href="/platforms">查看支持平台 →</a><a class="distribution-secondary" href="/release">开始发行</a></div></div>
       </div>
       <div class="dsp-motion" aria-label="主流音乐平台">
         <div class="dsp-motion-row dsp-motion-row-forward"><div class="dsp-motion-track"><div class="dsp-logo-group">
@@ -60,38 +77,104 @@
           <div class="dsp-logo-tile"><img src="/assets/platform-logos/spotify.jpeg" alt=""><span>Spotify</span></div><div class="dsp-logo-tile"><img src="/assets/platform-logos/apple-music.jpg" alt=""><span>Apple Music</span></div><div class="dsp-logo-tile"><img src="/assets/platform-logos/qq-music.png" alt=""><span>QQ音乐</span></div><div class="dsp-logo-tile"><img src="/assets/platform-logos/netease-music.jpg" alt=""><span>网易云音乐</span></div><div class="dsp-logo-tile"><img src="/assets/platform-logos/youtube-music.jpg" alt=""><span>YouTube Music</span></div><div class="dsp-logo-tile"><img src="/assets/platform-logos/amazon-music.png" alt=""><span>Amazon Music</span></div>
         </div></div></div>
       </div>
-      <div class="distribution-stats"><div class="distribution-stat"><strong>¥1</strong><span>1 首 × 1 渠道</span></div><div class="distribution-stat"><strong>主流优先</strong><span>常用平台直接选择</span></div><div class="distribution-stat"><strong>更多渠道</strong><span>需要时再展开</span></div></div>
+      <div class="distribution-stats"><div class="distribution-stat"><strong>¥1</strong><span>1 首 × 1 渠道</span></div><div class="distribution-stat"><strong>中国 + 全球</strong><span>主流音乐平台优先</span></div><div class="distribution-stat"><strong>先判断再购买</strong><span>不可发行的渠道不让你白付钱</span></div></div>
       <p class="distribution-note">实际可发行平台以作品权利、内容审核和音乐平台最新规则为准。</p>
+    </div>
+  </section>
+
+  <section class="market-section soft" id="calculator">
+    <div class="container">
+      <div class="market-head"><div><span class="market-kicker">价格计算器</span><h2>不用研究套餐。<br>选完渠道，价格就出来了。</h2></div><p>标准价格永远按“歌曲数量 × 实际选择的发行渠道”计算。下面直接试一下。</p></div>
+      <div class="market-calculator" data-market-calculator>
+        <div class="calc-copy">
+          <h3>这次准备发几首歌？</h3>
+          <p>先选择歌曲数量，再勾选你需要的音乐平台。正式发行时系统还会根据作品情况判断渠道资格。</p>
+          <div class="calc-qty"><span>歌曲数量</span><div class="calc-qty-control"><button type="button" data-market-step="down" aria-label="减少歌曲">−</button><strong data-market-track-count>1</strong><button type="button" data-market-step="up" aria-label="增加歌曲">+</button></div></div>
+          <p class="calc-subnote">一次购买多个发行额度时，也可以直接使用 100 / 500 / 1,000 次额度包。</p>
+        </div>
+        <div>
+          <div class="calc-platforms" aria-label="选择发行平台">
+            <button class="calc-platform active" type="button" data-market-channel="QQ音乐" aria-pressed="true"><i>✓</i>QQ 音乐</button>
+            <button class="calc-platform active" type="button" data-market-channel="网易云音乐" aria-pressed="true"><i>✓</i>网易云音乐</button>
+            <button class="calc-platform" type="button" data-market-channel="酷狗音乐" aria-pressed="false"><i>✓</i>酷狗音乐</button>
+            <button class="calc-platform" type="button" data-market-channel="汽水音乐" aria-pressed="false"><i>✓</i>汽水音乐</button>
+            <button class="calc-platform active" type="button" data-market-channel="Spotify" aria-pressed="true"><i>✓</i>Spotify</button>
+            <button class="calc-platform active" type="button" data-market-channel="Apple Music" aria-pressed="true"><i>✓</i>Apple Music</button>
+            <button class="calc-platform" type="button" data-market-channel="YouTube Music" aria-pressed="false"><i>✓</i>YouTube Music</button>
+            <button class="calc-platform" type="button" data-market-channel="Amazon Music" aria-pressed="false"><i>✓</i>Amazon Music</button>
+          </div>
+          <div class="calc-summary"><div><small><span data-market-channel-count>4</span> 个渠道</small><strong data-market-units>4 次发行额度</strong><span data-market-total>¥4</span></div><a class="btn btn-primary btn-lg" data-market-cta href="/release">¥4 开始发行</a></div>
+          <p class="calc-subnote">计算结果为标准价示意；预购发行额度可享对应折扣。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="market-section">
+    <div class="container">
+      <div class="market-head"><div><span class="market-kicker">为什么选择星球发行</span><h2>把音乐发行，<br>从一份合作方案变成一个直接可买的服务。</h2></div><p>新的自助发行不再要求用户先理解商务合作模式。核心规则公开、价格公开、渠道状态公开。</p></div>
+      <div class="reason-grid">
+        <article class="reason-card"><div class="reason-icon">¥1</div><h3>一首歌也能开始</h3><p>1 首歌曲发行到 1 个渠道标准价格 ¥1，没有最低消费，也不用先买年费。</p><small>发多少、选多少渠道，就按多少次计费。</small></article>
+        <article class="reason-card"><div class="reason-icon">✓</div><h3>先判断，再付款</h3><p>根据作品权利、创作方式和平台规则计算渠道资格，当前不可发行的渠道不会直接进入购买。</p><small>减少付款以后才发现平台不接收的情况。</small></article>
+        <article class="reason-card"><div class="reason-icon">100%</div><h3>发行收费，标准版税不抽成</h3><p>你支付的是基础音乐发行服务费；标准 DSP 数字发行产生的收益 100% 归用户。</p><small>个别 DSP 对特定内容本身存在的收益限制，以平台规则为准。</small></article>
+        <article class="reason-card"><div class="reason-icon">AI</div><h3>不按创作方式定价</h3><p>普通音乐、AI 辅助和 AI 生成音乐使用同一套价格。AI 只用于判断声明、审核和渠道资格。</p><small>是否使用 AI，不会自动让发行更贵。</small></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="market-section soft">
+    <div class="container">
+      <div class="market-head"><div><span class="market-kicker">适合谁</span><h2>同一套规则，<br>覆盖不同发行规模。</h2></div><p>这里不是三个套餐，也不是三种客户等级。只是不同发行场景，都可以用同一套发行额度完成。</p></div>
+      <div class="usecase-grid">
+        <article class="usecase-card"><span class="num">01 · 独立音乐人</span><h3>刚做完一首新歌，<br>自己决定发到哪里。</h3><p>无需先签合作方案。挑选真正需要的平台，完成资料和审核以后直接发行。</p><div class="case-example"><span>示例：1 首 × 4 渠道</span><strong>标准价 ¥4</strong></div></article>
+        <article class="usecase-card"><span class="num">02 · 持续发行创作者</span><h3>持续发歌，<br>提前囤额度更省。</h3><p>发行频率变高以后，不需要升级成会员。预购发行额度即可继续使用同样的发行流程。</p><div class="case-example"><span>示例：100 次发行额度</span><strong>¥95</strong></div></article>
+        <article class="usecase-card"><span class="num">03 · 厂牌 / 内容团队</span><h3>作品更多，<br>规则仍然不用变复杂。</h3><p>用更大的发行额度池持续管理多首作品、不同艺人和渠道交付，不因为主体类型进入另一套价格。</p><div class="case-example"><span>500 / 1,000 次额度可选</span><strong>按实际交付消耗</strong></div></article>
+      </div>
     </div>
   </section>
 
   <section class="section story-section" id="guide">
     <div class="container story-layout">
-      <div class="story-copy"><h2>发行一首歌，<br>不应该先学套餐。</h2><p>不分国内版、全球版，也不用选择月付、年付或服务年限。选中哪个渠道，就为哪个渠道付费。</p><p><strong>1 首 × 1 渠道 = 1 次发行额度。</strong></p><a class="text-link" href="/pricing">查看价格 <span>→</span></a></div>
+      <div class="story-copy"><h2>发行一首歌，<br>不应该先学套餐。</h2><p>不分国内版、全球版，也不用选择月付、年付或服务年限。选中哪个渠道，就为哪个渠道付费。</p><p><strong>1 首 × 1 渠道 = 1 次发行额度。</strong></p><a class="text-link" href="/release">开始创建发行 <span>→</span></a></div>
       <div class="story-stack">
-        <article><span>01</span><div><h3>上传作品</h3><p>填写发行、艺人和权利信息。</p></div></article>
-        <article><span>02</span><div><h3>选择渠道</h3><p>系统先判断实际可发行范围。</p></div></article>
-        <article class="active"><span>03</span><div><h3>付费并发行</h3><p>按实际选择渠道计次，提交后进入交付。</p></div></article>
+        <article><span>01</span><div><h3>上传作品</h3><p>填写发行、艺人、权利和必要的创作信息。</p></div></article>
+        <article><span>02</span><div><h3>选择渠道</h3><p>系统先判断实际可发行范围和重要限制。</p></div></article>
+        <article class="active"><span>03</span><div><h3>付费并发行</h3><p>按实际选择渠道计次，提交后进入审核与交付。</p></div></article>
       </div>
     </div>
   </section>
 
-  <section class="section native-section">
-    <div class="container">
-      <div class="native-head"><div class="section-head-copy"><h2>普通音乐、AI 辅助、AI 生成，<br>都走同一套发行。</h2></div><p>AI 不再是一个独立产品或价格版本。系统只在需要时收集 AI 使用信息，用它判断平台声明、发行资格、收益和推荐限制。</p></div>
-      <div class="capability-grid">
-        <article class="capability-card featured"><div class="cap-icon">¥1</div><h3>统一价格</h3><p>一首歌发行到一个渠道，标准价格 ¥1。</p></article>
-        <article class="capability-card"><div class="cap-icon">01</div><h3>权利预检</h3><p>提交前确认录音、词曲和商业发行权。</p></article>
-        <article class="capability-card"><div class="cap-icon">02</div><h3>渠道资格</h3><p>按作品属性实时判断哪些平台可以发行。</p></article>
-        <article class="capability-card"><div class="cap-icon">03</div><h3>AI 按需声明</h3><p>只有使用 AI 时才补充对应声明，不干扰普通音乐流程。</p></article>
-        <article class="capability-card"><div class="cap-icon">04</div><h3>状态跟踪</h3><p>查看审核、交付和上线状态。</p></article>
-        <article class="capability-card"><div class="cap-icon">05</div><h3>数据与收益</h3><p>发行后持续管理作品、播放和音乐收益。</p></article>
+  <section class="market-section soft" id="faq">
+    <div class="container faq-wrap">
+      <div class="faq-intro"><span class="market-kicker">常见问题</span><h2>付款以前，<br>先把规则讲清楚。</h2><p>如果你还在判断这套发行方式是否适合自己，下面这些通常是最先需要确认的问题。</p></div>
+      <div class="faq-list">
+        <details open><summary>基础音乐发行需要每年续费吗？</summary><p>不需要。基础音频发行按实际渠道交付计次，不设置年度订阅或在架年费。后续如果你主动新增发行渠道，再为新增渠道消耗新的发行额度。</p></details>
+        <details><summary>什么时候才会真正扣掉发行额度？</summary><p>确认订单时会先预占额度；作品通过必要检查并正式进入对应渠道 Delivery 后才消费。资料校验、权利预检或渠道资格未通过，不会消费对应额度。</p></details>
+        <details><summary>如果平台交付失败，还会再收费吗？</summary><p>同一次交付因为技术或供应链原因产生的自动重试不会重复收费；如果最终因为平台规则无法交付且不是虚假申报造成，对应额度会释放。</p></details>
+        <details><summary>星球发行会拥有我的音乐版权吗？</summary><p>不会。星球发行提供音乐发行服务，创作者或权利方仍保有自己的版权；提交发行时需要确认自己具备相应录音、词曲及商业发行权。</p></details>
+        <details><summary>标准数字发行收益真的 100% 归用户吗？</summary><p>是。新的按次付费基础发行不再额外抽取标准 Streaming / Download 发行分成。需要注意，某些 DSP 对特定内容本身可能存在不结算或收益限制，这属于平台规则，不是星球发行抽成。</p></details>
+        <details><summary>AI 生成的音乐也可以发行吗？</summary><p>可以提交，但最终可发行渠道取决于作品权利、AI 使用方式以及各音乐平台的最新规则。AI 不影响价格，只影响必要声明、审核和 Channel Eligibility。</p></details>
+        <details><summary>发行以后还能再增加一个平台吗？</summary><p>可以。后续新增一个可发行渠道，就按该新增渠道正常消耗新的发行额度；原来已经完成的渠道不会重复收费。</p></details>
+        <details><summary>多久能够在音乐平台上线？</summary><p>作品通过审核后会进入对应音乐平台的交付流程，不同 DSP 的处理速度并不一致，因此不承诺所有渠道统一上线时间。你可以在发行管理中持续查看审核、交付和上线状态。</p></details>
       </div>
     </div>
   </section>
 
-  <section class="section final-cta"><div class="container center"><h2>准备好音乐，<br>剩下的从这里开始。</h2><p>没有订阅，没有套餐门槛。发多少，付多少。</p><div class="hero-actions"><a class="btn btn-primary btn-lg" href="/release">开始发行</a><a class="btn btn-secondary btn-lg" href="/pricing">查看价格</a></div></div></section>
+  <section class="section final-cta"><div class="container center"><h2>先创建发行，<br>提交以前再付钱。</h2><p>没有订阅，没有套餐门槛。先完善资料、确认可发行渠道，再按实际选择付费。</p><div class="hero-actions"><a class="btn btn-primary btn-lg" href="/release">开始创建发行</a><a class="btn btn-secondary btn-lg" href="/pricing">查看完整价格</a></div></div></section>
 </main>
-<footer class="footer"><div class="container footer-inner"><span>© 2026 星球发行 · 音乐发行</span><div class="footer-nav"><a href="/">产品</a><a href="/platforms">支持平台</a><a href="/pricing">价格</a></div></div></footer>
+
+<footer class="market-footer">
+  <div class="container">
+    <div class="market-footer-top">
+      <div class="footer-brand"><img src="/assets/star-logo.png" alt="星球发行"><p>看见音乐旗下音乐发行服务。把长期积累的音乐分发能力，做成更直接、更透明的自助发行产品。</p></div>
+      <div class="footer-col"><strong>产品</strong><a href="/">音乐发行</a><a href="/platforms">支持平台</a><a href="/pricing">价格</a><a href="/release">开始发行</a></div>
+      <div class="footer-col"><strong>资源</strong><a href="https://guide.kanjian.com/" target="_blank" rel="noopener">发行指南</a><a href="https://help.kanjian.com/star" target="_blank" rel="noopener">帮助中心</a><a href="#faq">常见问题</a></div>
+      <div class="footer-col"><strong>支持</strong><a href="https://star.kanjian.com/contact" target="_blank" rel="noopener">联系我们</a><a href="https://star.kanjian.com/protection" target="_blank" rel="noopener">版权投诉与维权</a><a href="/platforms">平台发行规则</a></div>
+      <div class="footer-col"><strong>关于</strong><a href="https://www.kanjian.com/about-us" target="_blank" rel="noopener">关于看见音乐</a><a href="https://www.kanjian.com/" target="_blank" rel="noopener">KANJIAN.COM</a><a href="/app">登录账户</a></div>
+    </div>
+    <div class="market-footer-bottom"><span>© 2026 看见音乐 · 星球发行</span><div><a href="#faq">发行规则说明</a><a href="https://star.kanjian.com/protection" target="_blank" rel="noopener">版权与侵权处理</a><span>正式服务协议与隐私条款以上线版本为准</span></div></div>
+  </div>
+</footer>
 <script src="/prototype-v1/app-v2.js?v=20260916"></script>
+<script src="/prototype-v1/home-market.js?v=20260916"></script>
 </body></html>
