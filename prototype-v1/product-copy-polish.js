@@ -44,6 +44,9 @@
     document.querySelectorAll('input[placeholder]').forEach(input=>{
       if(input.placeholder==='搜索发行名称或艺人')input.placeholder='搜索发行或艺人';
     });
+    if(document.title.startsWith('发行额度与账单')){
+      document.title=document.title.replace('发行额度与账单','额度与账单');
+    }
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',polish);
