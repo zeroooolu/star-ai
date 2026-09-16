@@ -2,96 +2,76 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>支持平台与 AI 发行规则｜AI 音乐发行｜星球发行</title>
-<meta name="description" content="查看星球发行当前支持的中国及全球音乐平台，快速判断 AI 音乐是否可以发行，以及收益、推荐和其他限制。">
+<title>支持平台｜音乐发行｜星球发行</title>
+<meta name="description" content="查看星球发行当前支持的主流音乐平台及更多渠道，并了解作品的发行、收益、推荐和声明限制。">
 <link rel="stylesheet" href="/prototype-v1/styles.css">
 <link rel="stylesheet" href="/prototype-v1/brand-v2.css">
 <link rel="stylesheet" href="/prototype-v1/platforms-v1.css?v=20260910c">
 </head>
 <body class="platforms-page">
 <header class="nav"><div class="container nav-inner">
-  <a class="brand brand-real" href="/"><img src="/assets/star-logo.png" alt="星球发行"><span class="brand-divider"></span><span class="brand-product">AI 音乐发行</span></a>
+  <a class="brand brand-real" href="/"><img src="/assets/star-logo.png" alt="星球发行"><span class="brand-divider"></span><span class="brand-product">音乐发行</span></a>
   <nav class="menu"><a href="/">产品</a><a class="active" href="/platforms">支持平台</a><a href="/pricing">价格</a></nav>
-  <div class="nav-actions"><a class="btn btn-ghost" href="#">登录</a><a class="btn btn-primary" href="/release">开始发行</a></div>
+  <div class="nav-actions"><a class="btn btn-ghost" href="/app">登录</a><a class="btn btn-primary" href="/release">开始发行</a></div>
 </div></header>
 
 <main>
 <section class="platform-hero"><div class="container">
-  <h1>这首 AI 音乐，<br>到底可以发到哪里？</h1>
-  <p>不同平台规则不同。页面直接标明：可以发、有限制、需确认，或暂时不能发。</p>
-  <div class="platform-hero-actions"><a class="btn btn-primary btn-lg" href="/release">检查作品可发行平台 →</a><a class="btn btn-secondary btn-lg" href="#china">查看支持平台</a></div>
+  <h1>主流平台先选，<br>更多渠道需要时再加。</h1>
+  <p>每个渠道都是独立发行目标：1 首歌曲发行到 1 个渠道，消耗 1 次发行额度。系统会在付款前判断作品是否符合该平台规则。</p>
+  <div class="platform-hero-actions"><a class="btn btn-primary btn-lg" href="/release">开始选择发行渠道 →</a><a class="btn btn-secondary btn-lg" href="#core">查看主流渠道</a></div>
 </div></section>
 
 <section class="platform-summary"><div class="container">
-  <h2>只看 4 种结果。</h2>
-  <p>先看能不能发，再看上线后是否存在收益、推荐或其他限制。</p>
+  <h2>渠道不是“能不能接入”这么简单。</h2>
+  <p>真正需要判断的是：能不能交付、能不能产生收益、能不能进入推荐，以及是否需要额外声明。</p>
   <div class="eligibility-grid">
-    <article><small>01</small><span class="status-pill status-ok">可以发</span><h3>正常发行</h3><p>当前没有影响发行的明确 AI 限制。</p></article>
-    <article><small>02</small><span class="status-pill status-warn">可以发，但有限制</span><h3>可以上线</h3><p>收益、推荐、上线时间等可能受影响。</p></article>
-    <article><small>03</small><span class="status-pill status-check">要先确认</span><h3>发行前确认</h3><p>平台规则尚不明确，需要按最新要求判断。</p></article>
-    <article><small>04</small><span class="status-pill status-stop">暂时不能发</span><h3>当前不支持</h3><p>主要由 AI 自动生成的作品可能受到限制。</p></article>
+    <article><small>01</small><span class="status-pill status-ok">可发行</span><h3>正常购买</h3><p>当前可以选择并进入标准交付。</p></article>
+    <article><small>02</small><span class="status-pill status-warn">可发行 · 有限制</span><h3>付款前提示</h3><p>收益、推荐或上线范围可能受限。</p></article>
+    <article><small>03</small><span class="status-pill status-check">需要确认</span><h3>先补充信息</h3><p>规则不明确时先完成额外审核或声明。</p></article>
+    <article><small>04</small><span class="status-pill status-stop">暂不支持</span><h3>不可购买</h3><p>当前不符合资格的渠道不会进入订单。</p></article>
   </div>
+</div></section>
+
+<div class="platform-tabs"><div class="container"><a href="#core">主流渠道</a><a href="#more">更多渠道</a><a href="#rules">发行规则</a></div></div>
+
+<section class="platform-section" id="core"><div class="container">
+  <div class="platform-section-head"><div><h2>主流渠道</h2></div><p>发行页默认优先展示这些平台，覆盖用户最常见的国内外发行需求。</p></div>
+  <div class="platform-table">
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="QQ音乐"></span><div><strong>QQ 音乐</strong><small>中国</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">标准音频可发行；部分 AI 内容可能存在收益或推荐限制，提交前按作品属性判断。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="网易云音乐"></span><div><strong>网易云音乐</strong><small>中国</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">符合要求的作品可发行；AI 内容可能需要平台标识或额外声明。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="酷狗音乐"></span><div><strong>酷狗音乐</strong><small>中国</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">标准音频可发行；具体收益和推荐资格以最新渠道规则为准。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="汽水音乐"></span><div><strong>汽水音乐</strong><small>中国</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">符合要求的作品可发行；高度相似、批量低质内容可能受限。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Spotify"></span><div><strong>Spotify</strong><small>全球</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">符合权利要求的作品可发行；部分 AI 内容可能存在推荐限制。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Apple Music"></span><div><strong>Apple Music</strong><small>全球</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">符合要求的作品可发行，需要时按平台规则提交 AI 相关信息。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="YouTube Music"></span><div><strong>YouTube Music</strong><small>全球</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">标准音频可发行，并支持填写 AI 生成或 AI 辅助信息。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Amazon Music"></span><div><strong>Amazon Music</strong><small>全球</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">普通音乐和 AI 辅助通常可发行；主要由 AI 生成的作品按最新规则确认。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="TikTok"></span><div><strong>TikTok</strong><small>全球</small></div></div><div><span class="platform-cell-label">价格</span><span class="status-pill status-ok">¥1 / 首</span></div><div class="platform-rule">符合权利要求的内容可提交；主要由 AI 生成的音乐按当前供应链规则确认。</div></article>
+  </div>
+</div></section>
+
+<section class="platform-section alt" id="more"><div class="container">
+  <div class="platform-section-head"><div><h2>更多渠道</h2></div><p>这些渠道不会抢占主流程，需要时再展开选择，仍然按 1 首 × 1 渠道消耗 1 次发行额度。</p></div>
+  <div class="platform-table">
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="酷我音乐"></span><div><strong>酷我音乐</strong></div></div><div><span class="status-pill status-ok">可发行</span></div><div class="platform-rule">按作品资格正常选择。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="华为音乐"></span><div><strong>华为音乐</strong></div></div><div><span class="status-pill status-ok">可发行</span></div><div class="platform-rule">按平台最新内容规则交付。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="KKBOX"></span><div><strong>KKBOX</strong></div></div><div><span class="status-pill status-ok">可发行</span></div><div class="platform-rule">按平台最新内容规则交付。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Deezer"></span><div><strong>Deezer</strong></div></div><div><span class="status-pill status-warn">可能有限制</span></div><div class="platform-rule">部分 AI 内容可能不进入推荐。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="TIDAL"></span><div><strong>TIDAL</strong></div></div><div><span class="status-pill status-warn">可能有限制</span></div><div class="platform-rule">部分 AI 内容可能存在收益限制。</div></article>
+    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="SoundCloud"></span><div><strong>SoundCloud</strong></div></div><div><span class="status-pill status-check">按规则确认</span></div><div class="platform-rule">具体可发行范围以当前供应链规则为准。</div></article>
+  </div>
+</div></section>
+
+<section class="platform-section" id="rules"><div class="container">
+  <div class="platform-section-head"><div><h2>统一发行规则</h2></div><p>AI 不是单独商品，但作品属性会影响具体渠道资格。</p></div>
   <div class="creation-types">
-    <div class="creation-type"><strong>AI 辅助创作</strong><p>主要创作或制作由人工完成，AI 用于编曲、修音、局部素材等部分环节。</p></div>
-    <div class="creation-type"><strong>主要由 AI 自动生成</strong><p>大部分音乐或人声由 AI 直接生成，人工主要进行提示、选择和少量修改。</p></div>
+    <div class="creation-type"><strong>普通音乐</strong><p>按权利、内容、元数据和平台标准规则审核。</p></div>
+    <div class="creation-type"><strong>AI 辅助创作</strong><p>价格不变；需要时补充 AI 使用方式和商业使用权声明。</p></div>
+    <div class="creation-type"><strong>主要由 AI 生成</strong><p>价格不变；部分平台可能不支持、限制收益或限制推荐。</p></div>
   </div>
+  <div class="platform-note"><strong>重要：</strong>付费不代表绕过 DSP 审核。没有资格的渠道不会进入可购买范围；技术失败重试不会重复扣发行额度。</div>
 </div></section>
-
-<div class="platform-tabs"><div class="container"><a href="#china">中国平台</a><a href="#global">海外平台</a><a href="#redlines">发行红线</a></div></div>
-
-<section class="platform-section" id="china"><div class="container">
-  <div class="platform-section-head"><div><h2>中国平台</h2></div><p>国内主流平台大多可以发行 AI 音乐，主要差别在收益、推荐、内容重复度和上线时间。</p></div>
-  <div class="platform-table">
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="QQ音乐"></span><div><strong>QQ 音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">AI 音乐可上线；<strong>部分 AI 内容当前不参与收益和平台推荐</strong>，需如实填写 AI 使用情况。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="酷狗音乐"></span><div><strong>酷狗音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">AI 音乐可上线；<strong>部分 AI 内容当前不参与收益和平台推荐</strong>，需如实填写 AI 使用情况。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="酷我音乐"></span><div><strong>酷我音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">AI 音乐可上线；<strong>部分 AI 内容当前不参与收益和平台推荐</strong>，需如实填写 AI 使用情况。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="网易云音乐"></span><div><strong>网易云音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">符合要求的 AI 原创音乐可发行，作品可能显示 <strong>AI 相关标识</strong>。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="汽水音乐"></span><div><strong>汽水音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">AI 原创音乐可发行；<strong>批量高度相似的歌曲可能无法上线或被下架。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="番茄音乐"></span><div><strong>番茄音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">符合要求的 AI 原创音乐可正常发行。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="华为音乐"></span><div><strong>华为音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">当前可以发行，AI 规则以平台最新要求为准。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="咪咕音乐"></span><div><strong>咪咕音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">AI 音乐可以发行；<strong>上线时间可能相对较长。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="阿里音乐"></span><div><strong>阿里音乐</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">当前可以发行，AI 规则以平台最新要求为准。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="KKBOX"></span><div><strong>KKBOX</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">当前可以发行，AI 规则以平台最新要求为准。</div></article>
-  </div>
-  <div class="platform-note"><strong>视频发行：</strong>部分平台的视频发行仍需人工处理，目前不属于基础音频自助发行范围。</div>
-</div></section>
-
-<section class="platform-section alt" id="global"><div class="container">
-  <div class="platform-section-head"><div><h2>海外平台</h2></div><p>海外平台差异较大。重点关注作品是否主要由 AI 自动生成，以及收益和推荐是否受限。</p></div>
-  <div class="platform-table">
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Spotify"></span><div><strong>Spotify</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">AI 音乐可发行并按有效播放获得收益；<strong>部分 AI 内容的推荐可能受限。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Apple Music"></span><div><strong>Apple Music</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">符合要求的 AI 音乐可发行，需具备商业发行权并按要求填写 AI 信息。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Amazon Music"></span><div><strong>Amazon Music</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-check">要先确认</span></div><div class="platform-rule">AI 辅助创作通常可发行；<strong>主要由 AI 自动生成的作品需要按最新规则确认。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="YouTube Music"></span><div><strong>YouTube Music</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-ok">可以发</span></div><div class="platform-rule">符合要求的 AI 音乐可发行，支持填写 AI 生成或 AI 辅助信息。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Deezer"></span><div><strong>Deezer</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">主要由 AI 自动生成的音乐可上线并按有效播放结算；<strong>不进入平台推荐和编辑歌单。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="TIDAL"></span><div><strong>TIDAL</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">AI 音乐可上线；<strong>几乎全部由 AI 自动生成的录音目前可能无法获得版税。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Yandex"></span><div><strong>Yandex</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-warn">可以发，但有限制</span></div><div class="platform-rule">AI 音乐可发行并按有效播放获得收益；<strong>AI 标识可能影响推荐。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="TikTok"></span><div><strong>TikTok</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-check">要先确认</span></div><div class="platform-rule">AI 内容并非全面禁止；<strong>主要由 AI 自动生成的音乐需要按最新发行规则确认。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Meta（Facebook / Instagram）"></span><div><strong>Meta</strong><small>Facebook / Instagram</small></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-check">要先确认</span></div><div class="platform-rule">AI 内容并非全面禁止；<strong>主要由 AI 自动生成的音乐需要按最新发行规则确认。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="SoundCloud"></span><div><strong>SoundCloud</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-check">要先确认</span></div><div class="platform-rule">普通音乐和 AI 辅助创作可发行；<strong>主要由 AI 自动生成的作品需要确认当前渠道规则。</strong></div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Bandcamp"></span><div><strong>Bandcamp</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-stop">暂时不能发</span></div><div class="platform-rule"><strong>主要由 AI 自动生成的作品当前不支持。</strong>少量 AI 辅助需按实际创作情况判断。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Beatport"></span><div><strong>Beatport</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-stop">暂时不能发</span></div><div class="platform-rule"><strong>主要由 AI 自动生成的作品当前不支持。</strong>AI 仅作为辅助工具时可以发行。</div></article>
-    <article class="platform-row"><div class="platform-name"><span class="platform-logo" data-logo="Qobuz"></span><div><strong>Qobuz</strong></div></div><div><span class="platform-cell-label">结果</span><span class="status-pill status-stop">暂时不能发</span></div><div class="platform-rule"><strong>几乎全部由 AI 自动生成的作品当前不可新提交。</strong>AI 辅助创作可以发行。</div></article>
-  </div>
-</div></section>
-
-<section class="rule-section" id="redlines"><div class="container">
-  <h2>不管发到哪里，<br>这 6 件事不要做。</h2>
-  <p class="section-intro">平台规则虽然不同，但底线一致：权利清晰、不冒充、不侵权、不刷量、不批量制造重复内容。</p>
-  <div class="redline-grid">
-    <article><span>01</span><h3>未经授权克隆真人声线</h3><p>明显模仿真实艺人、公众人物或其他个人声音，需要取得相应授权。</p></article>
-    <article><span>02</span><h3>冒充已有艺人</h3><p>冒用艺人名称、头像、主页或身份，可能导致作品无法发行。</p></article>
-    <article><span>03</span><h3>发行无权使用的内容</h3><p>AI 工具允许生成，不代表自动获得商业发行权。发行前需确认相关授权。</p></article>
-    <article><span>04</span><h3>批量上传重复歌曲</h3><p>大量生成高度相似的歌曲，可能被平台限制或下架。</p></article>
-    <article><span>05</span><h3>刷播放量</h3><p>异常播放和人工刷量可能导致收益取消、歌曲下架或账号受限。</p></article>
-    <article><span>06</span><h3>隐瞒 AI 使用情况</h3><p>平台要求填写 AI 信息时应如实填写，避免影响审核和上线。</p></article>
-  </div>
-  <div class="policy-footnote">规则版本：2026-09-09。音乐平台的 AI 规则仍在变化。本页展示当前掌握的发行情况，最终结果以作品实际情况和平台最新规则为准。</div>
-</div></section>
-
-<section class="platform-cta"><div class="container"><h2>无需逐个平台研究规则。</h2><p>提交创作方式后，发行前直接显示：可以发、有限制、需确认或暂不支持。</p><a class="btn btn-primary btn-lg" href="/release">检查并开始发行 →</a></div></section>
 </main>
-
-<footer class="footer"><div class="container footer-inner"><span>© 2026 看见音乐 · 星球发行</span><div class="footer-nav"><a href="/">产品</a><a href="/platforms">支持平台</a><a href="/pricing">价格</a></div></div></footer>
-<script src="/prototype-v1/app-v2.js"></script>
+<footer class="footer"><div class="container footer-inner"><span>© 2026 星球发行 · 音乐发行</span><div class="footer-nav"><a href="/">产品</a><a href="/platforms">支持平台</a><a href="/pricing">价格</a></div></div></footer>
+<script src="/prototype-v1/app-v2.js?v=20260916"></script>
 </body></html>
