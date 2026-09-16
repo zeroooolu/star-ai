@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded',()=>{
   const storyTitle=document.querySelector('.story-copy h2');
   if(storyTitle)storyTitle.innerHTML='发行流程，<br>3 步完成。';
 
+  const trustCopy=document.querySelector('.trust-intro p');
+  if(trustCopy)trustCopy.innerHTML='<strong>星球发行是看见音乐旗下音乐发行服务。</strong>依托看见音乐长期积累的音乐资产管理、分发与结算能力，为音乐人和内容团队提供自助发行。';
+  const trustLabels=['全球音乐资产','音乐创作者','公司与内容机构','看见音乐整体网络接入渠道'];
+  document.querySelectorAll('.trust-stat span').forEach((el,i)=>{if(trustLabels[i])el.textContent=trustLabels[i];});
+
   const root=document.querySelector('[data-market-calculator]');
   if(!root)return;
 
