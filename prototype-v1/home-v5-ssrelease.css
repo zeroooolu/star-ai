@@ -1,0 +1,261 @@
+/* Homepage V5 visual refinement
+   Goal: lighter, flatter, more editorial music-product presentation while preserving Star Distribution blue.
+   This file only overrides the existing homepage (.home-v3). */
+
+.home-v3{
+  --v5-blue:#165dff;
+  --v5-blue-deep:#0c46d7;
+  --v5-blue-soft:#eaf1ff;
+  --v5-ink:#111827;
+  --v5-muted:#677386;
+  --v5-line:#e7ebf1;
+  --v5-paper:#f7f9fc;
+  --v5-night:#0c1220;
+  background:#fff;
+}
+
+.home-v3 .container{width:min(1220px,calc(100% - 64px))}
+.home-v3 h2{font-size:clamp(42px,4.2vw,62px);line-height:1.03;letter-spacing:-.052em;font-weight:730}
+.home-v3 .btn-lg{height:52px;padding:0 22px;border-radius:14px;font-size:14px}
+
+/* Navigation: lighter and less dashboard-like. */
+.home-v3 .home-nav{
+  height:76px;
+  background:rgba(255,255,255,.9);
+  border-bottom:0;
+  box-shadow:0 1px 0 rgba(17,24,39,.06);
+  backdrop-filter:blur(20px);
+}
+.home-v3 .home-nav .nav-inner{height:76px}
+.home-v3 .home-nav .brand-real>img{width:116px}
+.home-v3 .home-nav .menu{gap:34px}
+.home-v3 .home-nav .menu a{padding:28px 0;font-size:13px;color:#697386}
+.home-v3 .home-nav .menu a.active,.home-v3 .home-nav .menu a:hover{color:#111827}
+.home-v3 .home-nav .btn{border-radius:12px;padding:10px 16px}
+.home-v3 .home-nav .btn-ghost{background:transparent}
+
+/* Hero: move away from the heavy dark SaaS stage into a spacious music-brand canvas. */
+.home-v3 .hero-v3{
+  min-height:720px;
+  padding:118px 0 88px;
+  background:
+    radial-gradient(circle at 84% 22%,rgba(22,93,255,.15),transparent 30%),
+    radial-gradient(circle at 72% 72%,rgba(119,157,255,.16),transparent 34%),
+    linear-gradient(180deg,#f7faff 0%,#f4f7fb 100%);
+  color:var(--v5-ink);
+}
+.home-v3 .hero-v3:before{
+  width:520px;height:520px;right:-110px;top:-110px;
+  background:radial-gradient(circle,rgba(22,93,255,.16),transparent 68%);
+  filter:blur(6px);
+}
+.home-v3 .hero-v3:after{
+  width:440px;height:440px;left:-240px;bottom:-260px;
+  background:radial-gradient(circle,rgba(110,149,255,.1),transparent 70%);
+}
+.home-v3 .hero-grid-bg{
+  opacity:.38;
+  background-image:linear-gradient(rgba(22,93,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(22,93,255,.055) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:linear-gradient(to right,rgba(0,0,0,.75),rgba(0,0,0,.24) 58%,transparent 88%);
+}
+.home-v3 .hero-v3 .hero-grid{grid-template-columns:minmax(0,1.04fr) minmax(430px,.96fr);gap:74px;align-items:center}
+.home-v3 .hero-v3 h1{
+  max-width:760px;
+  margin:0 0 28px;
+  color:#101827;
+  font-size:clamp(60px,6.1vw,88px);
+  line-height:.96;
+  letter-spacing:-.068em;
+  font-weight:760;
+}
+.home-v3 .hero-v3 h1 em{color:var(--v5-blue)}
+.home-v3 .hero-v3 .hero-copy{max-width:620px;margin:0 0 34px;color:#657184;font-size:17px;line-height:1.78}
+.home-v3 .hero-v3 .btn-primary{background:var(--v5-blue);color:#fff;border-color:var(--v5-blue);box-shadow:0 12px 28px rgba(22,93,255,.18)}
+.home-v3 .hero-v3 .btn-primary:hover{background:var(--v5-blue-deep);color:#fff;box-shadow:0 16px 32px rgba(22,93,255,.24)}
+.home-v3 .hero-v3 .btn-secondary{background:#fff;color:#1f2937;border-color:#d9e0e9}
+.home-v3 .hero-v3 .btn-secondary:hover{background:#fff;border-color:#bfc9d7}
+.home-v3 .hero-points-v3{
+  display:flex!important;
+  flex-wrap:wrap;
+  gap:8px!important;
+  margin-top:30px!important;
+  padding-top:0;
+  border-top:0;
+}
+.home-v3 .hero-points-v3 span{
+  padding:8px 11px!important;
+  border:1px solid #dfe5ee!important;
+  border-radius:999px;
+  background:rgba(255,255,255,.7);
+  color:#687588!important;
+  font-size:11px!important;
+}
+.home-v3 .hero-points-v3 i{color:var(--v5-blue)}
+
+/* Release proof: one clean object rather than a dark nested card. */
+.home-v3 .release-passport{
+  padding:0;
+  border-radius:26px;
+  background:#fff;
+  border:1px solid rgba(195,205,220,.78);
+  box-shadow:0 28px 70px rgba(43,67,111,.16);
+  overflow:hidden;
+}
+.home-v3 .release-passport:after{display:none}
+.home-v3 .passport-topbar{
+  height:46px;
+  padding:0 18px;
+  border-bottom:1px solid #edf0f4;
+  background:rgba(255,255,255,.94);
+  color:#8b96a7;
+  font-size:9px;
+  letter-spacing:.06em;
+}
+.home-v3 .passport-topbar>div{color:#5f6b7d}
+.home-v3 .live-dot{background:#25b981}
+.home-v3 .passport-track{border-radius:0;padding:22px 22px 20px;grid-template-columns:88px 1fr auto;background:#fff}
+.home-v3 .passport-cover{width:88px;height:88px;border-radius:14px;padding:12px;box-shadow:none}
+.home-v3 .passport-track-info h3{font-size:24px;margin:6px 0 4px}
+.home-v3 .passport-track-info p{font-size:12px}
+.home-v3 .passport-badge{border-radius:999px;padding:7px 10px}
+.home-v3 .passport-meta{margin-top:0;background:#f7f9fc;border-top:1px solid #edf0f4;border-bottom:1px solid #edf0f4}
+.home-v3 .passport-meta>div{padding:15px 14px;border-right:1px solid #e7ebf1}
+.home-v3 .passport-platforms{padding:10px 22px 8px}
+.home-v3 .passport-row{padding:11px 0}
+.home-v3 .passport-row .status-logo{border-radius:9px}
+.home-v3 .passport-footer{margin:0;border-radius:0;padding:14px 22px;background:#f7f9fc;border-top:1px solid #edf0f4}
+
+/* DSP strip: more confidence, less opacity. */
+.home-v3 .dsp-band-v3{padding:34px 0 28px;background:#fff;border-top:1px solid #eef1f5;border-bottom:1px solid #eef1f5}
+.home-v3 .dsp-band-head{margin-bottom:22px}
+.home-v3 .dsp-band-head strong{font-size:15px}
+.home-v3 .dsp-band-head p{font-size:11px;color:#8a95a6}
+.home-v3 .dsp-band-v3 .logo-box{width:124px;height:50px;filter:none;opacity:.78}
+.home-v3 .dsp-band-v3 .logo-box:hover{opacity:1}
+
+/* Story: reduce section height and keep the flow editorial. */
+.home-v3 .story-section{padding:112px 0;background:#fff}
+.home-v3 .story-layout{grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:110px}
+.home-v3 .story-copy{top:104px}
+.home-v3 .story-copy h2{font-size:clamp(50px,4.8vw,68px);margin:0 0 28px}
+.home-v3 .story-copy>p{font-size:15px;line-height:1.85}
+.home-v3 .story-stack article{min-height:140px;padding:25px 0;grid-template-columns:54px 1fr;gap:24px}
+.home-v3 .story-stack article>span{width:36px;height:36px}
+.home-v3 .story-stack h3{font-size:21px}
+
+/* Core capability section: stronger contrast, but flatter inside. */
+.home-v3 .native-section{padding:116px 0;background:var(--v5-night);color:#fff}
+.home-v3 .native-head{margin-bottom:52px;grid-template-columns:1fr .55fr;gap:90px}
+.home-v3 .native-head h2{color:#fff}
+.home-v3 .native-head>p{color:#99a7bb}
+.home-v3 .capability-grid{border:1px solid #293243;border-radius:24px;background:#111827;overflow:hidden}
+.home-v3 .capability-card{background:#111827;border-bottom:1px solid #293243;color:#fff}
+.home-v3 .capability-card.featured{
+  min-height:590px;
+  background:linear-gradient(155deg,#155dff 0%,#1148c8 58%,#102857 100%);
+  border-right:1px solid #2f5bb8;
+}
+.home-v3 .capability-card:not(.featured) .cap-icon{background:#1b2639;color:#8fb4ff}
+.home-v3 .capability-card:not(.featured) h3{color:#f7f9fc}
+.home-v3 .capability-card:not(.featured) p{color:#8e9bad}
+.home-v3 .featured .ai-orbit{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.24)}
+.home-v3 .featured h3{font-size:38px}
+.home-v3 .featured p{color:#c7d6f5}
+
+/* Tools: airy chips over a light field. */
+.home-v3 .tools-section{padding:104px 0;background:#f5f7fb}
+.home-v3 .tools-shell{border:0;background:transparent;border-radius:0;padding:0;grid-template-columns:.9fr 1.1fr;gap:80px}
+.home-v3 .tools-copy h2{margin-top:0}
+.home-v3 .tool-cloud{background:#fff;border:1px solid #e2e7ef;border-radius:24px;padding:30px;box-shadow:0 18px 45px rgba(53,72,106,.07)}
+.home-v3 .tool-pill{border-color:#e2e7ef;background:#fff;border-radius:999px;box-shadow:none}
+.home-v3 .tool-pill-lg,.home-v3 .tool-pill-wide{border-radius:999px}
+.home-v3 .tool-pill-more{background:#edf3ff;color:var(--v5-blue);border-color:#d5e1ff}
+
+/* Process: a clean timeline, not four cards. */
+.home-v3 .process-section{padding:110px 0;background:#fff}
+.home-v3 .process-head{margin-bottom:54px}
+.home-v3 .process-line{border-top:1px solid #dfe5ed;gap:0}
+.home-v3 .process-line article{padding:30px 28px 12px 0;border:0;border-right:1px solid #e3e8ef;border-radius:0;background:transparent;box-shadow:none}
+.home-v3 .process-line article:last-child{border-right:0;padding-right:0;padding-left:28px}
+.home-v3 .process-line article:nth-child(2),.home-v3 .process-line article:nth-child(3){padding-left:28px}
+.home-v3 .process-icon{width:44px;height:44px;border-radius:50%;background:#edf3ff;color:var(--v5-blue)}
+.home-v3 .process-line h3{font-size:18px}
+.home-v3 .process-line p{font-size:12px;line-height:1.7}
+.home-v3 .process-cta{margin-top:50px}
+
+/* Trust: use the brand blue as the singular strong color block. */
+.home-v3 .trust-section{padding:108px 0 0;background:var(--v5-blue);color:#fff}
+.home-v3 .trust-glow{display:none}
+.home-v3 .trust-copy h2{color:#fff}
+.home-v3 .trust-copy p{color:#dce7ff}
+.home-v3 .trust-copy .trust-emphasis{color:#dce7ff}
+.home-v3 .trust-copy .trust-emphasis strong{color:#fff}
+.home-v3 .trust-grid{border-top:1px solid rgba(255,255,255,.24);border-left:1px solid rgba(255,255,255,.24)}
+.home-v3 .trust-grid article{background:transparent;border-right:1px solid rgba(255,255,255,.24);border-bottom:1px solid rgba(255,255,255,.24);border-radius:0;color:#fff}
+.home-v3 .trust-grid article p{color:#d7e3ff}
+.home-v3 .trust-statement{margin-top:72px;padding:24px 0;border-top:1px solid rgba(255,255,255,.25);color:#fff}
+
+/* Why / Audience / Catalog: reduce visual noise and create one continuous editorial rhythm. */
+.home-v3 .why-section{padding:112px 0;background:#fff}
+.home-v3 .why-metrics{border-top:1px solid #dfe5ed}
+.home-v3 .why-metrics article{border:0;border-bottom:1px solid #e3e8ef;border-radius:0;background:transparent;box-shadow:none;padding:24px 0}
+.home-v3 .audience-section{padding:108px 0;background:#f7f9fc}
+.home-v3 .audience-grid{gap:0;border-top:1px solid #dfe5ed}
+.home-v3 .audience-grid article{border:0;border-bottom:1px solid #dfe5ed;border-radius:0;background:transparent;box-shadow:none;padding:30px 26px 30px 0}
+.home-v3 .audience-grid article:nth-child(even){padding-left:30px;border-left:1px solid #dfe5ed}
+.home-v3 .catalog-section{padding:112px 0;background:#fff}
+.home-v3 .catalog-card{border-radius:28px;background:#0f1727;border:0;box-shadow:none;padding:64px}
+.home-v3 .catalog-ui{border-radius:18px;box-shadow:none;border:1px solid #2b3649}
+
+/* FAQ and closing CTA: less card-like, stronger finish. */
+.home-v3 .faq-section{padding:112px 0;background:#fff}
+.home-v3 .faq-list details{border-radius:0;border:0;border-bottom:1px solid #dfe5ed;background:transparent;box-shadow:none}
+.home-v3 .faq-list details:first-child{border-top:1px solid #dfe5ed}
+.home-v3 .final-cta{padding:104px 0;background:#0d1422}
+.home-v3 .final-cta h2{font-size:clamp(48px,5vw,72px)}
+.home-v3 .final-cta .btn-primary{background:#fff;color:#111827;border-color:#fff}
+.home-v3 .final-cta .btn-secondary{background:transparent;border-color:#344056;color:#fff}
+.home-v3 .footer-v3{background:#0d1422;border-top:1px solid #252f41}
+
+@media (max-width:1100px){
+  .home-v3 .hero-v3{padding-top:104px}
+  .home-v3 .hero-v3 .hero-grid{grid-template-columns:1fr;gap:52px}
+  .home-v3 .hero-v3 h1{max-width:820px}
+  .home-v3 .release-passport{max-width:720px}
+  .home-v3 .story-layout{grid-template-columns:1fr;gap:60px}
+  .home-v3 .story-copy{position:static}
+  .home-v3 .native-head{grid-template-columns:1fr;gap:24px}
+  .home-v3 .tools-shell{grid-template-columns:1fr;gap:42px}
+  .home-v3 .process-line{grid-template-columns:repeat(2,1fr)}
+  .home-v3 .process-line article:nth-child(2){border-right:0}
+  .home-v3 .process-line article:nth-child(3){padding-left:0}
+}
+
+@media (max-width:760px){
+  .home-v3 .container{width:min(100% - 32px,1220px)}
+  .home-v3 .home-nav{height:66px}
+  .home-v3 .home-nav .nav-inner{height:66px}
+  .home-v3 .hero-v3{min-height:auto;padding:88px 0 56px}
+  .home-v3 .hero-v3 h1{font-size:clamp(48px,14vw,66px);line-height:.98}
+  .home-v3 .hero-v3 .hero-copy{font-size:15px;line-height:1.72}
+  .home-v3 .hero-points-v3{gap:6px!important}
+  .home-v3 .release-passport{border-radius:20px}
+  .home-v3 .passport-track{grid-template-columns:70px 1fr;gap:14px}
+  .home-v3 .passport-cover{width:70px;height:70px}
+  .home-v3 .passport-badge{grid-column:2;margin-top:8px;justify-self:start}
+  .home-v3 .passport-meta{grid-template-columns:repeat(2,1fr)}
+  .home-v3 .story-section,.home-v3 .native-section,.home-v3 .tools-section,.home-v3 .process-section,.home-v3 .why-section,.home-v3 .audience-section,.home-v3 .catalog-section,.home-v3 .faq-section{padding:78px 0}
+  .home-v3 .capability-grid{display:block;border-radius:18px}
+  .home-v3 .capability-card.featured{min-height:auto;padding:34px}
+  .home-v3 .featured .ai-orbit{margin:10px 0 48px}
+  .home-v3 .capability-card:not(.featured){display:block;padding:24px}
+  .home-v3 .capability-card:not(.featured) .cap-icon{margin-bottom:18px}
+  .home-v3 .process-line{grid-template-columns:1fr}
+  .home-v3 .process-line article,.home-v3 .process-line article:nth-child(2),.home-v3 .process-line article:nth-child(3),.home-v3 .process-line article:last-child{padding:24px 0;border-right:0;border-bottom:1px solid #e3e8ef}
+  .home-v3 .audience-grid{display:block}
+  .home-v3 .audience-grid article,.home-v3 .audience-grid article:nth-child(even){padding:26px 0;border-left:0}
+  .home-v3 .catalog-card{padding:32px 22px;border-radius:20px}
+  .home-v3 .trust-section{padding-top:78px}
+  .home-v3 .trust-statement{margin-top:48px}
+}

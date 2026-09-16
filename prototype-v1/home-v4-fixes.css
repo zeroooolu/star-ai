@@ -1,0 +1,208 @@
+/* Homepage V4 corrective layer: DSP logo consistency + headline line-breaking */
+
+/* GLOBAL DISTRIBUTION: keep every brand in color and normalize visual size. */
+.home-v3 .dsp-band-v3 .marquee{
+  align-items:center;
+  gap:22px;
+}
+.home-v3 .dsp-band-v3 .logo-box{
+  flex:0 0 128px;
+  width:128px;
+  height:56px;
+  padding:8px 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  filter:none !important;
+  opacity:1 !important;
+}
+.home-v3 .dsp-band-v3 .logo-box:hover{
+  filter:none !important;
+  opacity:1 !important;
+}
+.home-v3 .dsp-band-v3 .logo-box img{
+  display:block;
+  width:auto !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:34px !important;
+  padding:0 !important;
+  object-fit:contain !important;
+  flex:0 0 auto;
+}
+.home-v3 .dsp-band-v3 .logo-box .logo-wordmark{
+  width:100%;
+  max-width:100%;
+  padding:0;
+  text-align:center;
+  font-size:11px;
+  line-height:1.15;
+  color:#475569;
+}
+
+/* Headline system: large, but sized to the column it actually lives in. */
+.home-v3 h2{
+  line-height:1.07;
+  letter-spacing:-.052em;
+  text-wrap:balance;
+}
+.home-v3 .hero-v3 .hero-grid{
+  grid-template-columns:minmax(0,1.16fr) minmax(430px,.84fr);
+  gap:72px;
+}
+.home-v3 .hero-v3 h1{
+  max-width:720px;
+  font-size:clamp(58px,5.15vw,72px);
+  line-height:.98;
+  letter-spacing:-.064em;
+}
+.home-v3 .native-head{
+  grid-template-columns:minmax(0,1.18fr) minmax(320px,.54fr);
+  gap:72px;
+}
+.home-v3 .native-head h2{
+  max-width:790px;
+  font-size:clamp(46px,4vw,54px);
+}
+.home-v3 .tools-shell{
+  grid-template-columns:minmax(0,1fr) minmax(500px,1fr);
+  gap:80px;
+}
+.home-v3 .tools-copy h2{
+  max-width:620px;
+  font-size:clamp(46px,4vw,52px);
+}
+.home-v3 .trust-layout{
+  grid-template-columns:minmax(0,1fr) minmax(500px,1fr);
+  gap:80px;
+}
+.home-v3 .trust-copy h2{
+  max-width:620px;
+  font-size:clamp(46px,4vw,52px);
+  line-height:1.07;
+}
+.home-v3 .why-layout{
+  grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);
+  gap:96px;
+}
+.home-v3 .why-copy h2{
+  max-width:560px;
+  font-size:clamp(50px,4.3vw,60px);
+}
+.home-v3 .audience-head{
+  max-width:980px;
+}
+.home-v3 .audience-head h2{
+  max-width:980px;
+  font-size:clamp(48px,4.2vw,58px);
+}
+.home-v3 .catalog-card{
+  grid-template-columns:minmax(0,1fr) minmax(500px,1fr);
+  gap:68px;
+}
+.home-v3 .catalog-copy h2{
+  max-width:600px;
+  font-size:clamp(42px,3.7vw,48px);
+  line-height:1.08;
+}
+.home-v3 .faq-head h2{
+  font-size:clamp(46px,4vw,54px);
+}
+.home-v3 .final-cta h2{
+  font-size:clamp(56px,5vw,70px);
+  line-height:1.02;
+}
+
+/* Desktop/tablet: respect authored <br> line breaks, don't strand 1–2 Chinese characters. */
+@media(min-width:761px){
+  .home-v3 .hero-v3 h1,
+  .home-v3 .story-copy h2,
+  .home-v3 .native-head h2,
+  .home-v3 .tools-copy h2,
+  .home-v3 .process-head h2,
+  .home-v3 .trust-copy h2,
+  .home-v3 .why-copy h2,
+  .home-v3 .audience-head h2,
+  .home-v3 .catalog-copy h2,
+  .home-v3 .faq-head h2,
+  .home-v3 .final-cta h2{
+    word-break:keep-all;
+    overflow-wrap:normal;
+  }
+}
+
+/* 1100px and below already switches major sections to one column; keep title sizes sane there. */
+@media(max-width:1100px){
+  .home-v3 .hero-v3 .hero-grid,
+  .home-v3 .native-head,
+  .home-v3 .tools-shell,
+  .home-v3 .trust-layout,
+  .home-v3 .why-layout,
+  .home-v3 .catalog-card{
+    grid-template-columns:1fr;
+  }
+  .home-v3 .hero-v3 h1{max-width:760px}
+  .home-v3 .native-head h2,
+  .home-v3 .tools-copy h2,
+  .home-v3 .trust-copy h2,
+  .home-v3 .why-copy h2,
+  .home-v3 .catalog-copy h2{max-width:820px}
+}
+
+/* Mobile: let Chinese wrap naturally, but use smaller sizes and balanced wrapping. */
+@media(max-width:760px){
+  .home-v3 .dsp-band-v3 .marquee{gap:14px}
+  .home-v3 .dsp-band-v3 .logo-box{
+    flex-basis:108px;
+    width:108px;
+    height:48px;
+    padding:7px 10px;
+  }
+  .home-v3 .dsp-band-v3 .logo-box img{max-height:29px !important}
+
+  .home-v3 .hero-v3 h1,
+  .home-v3 .story-copy h2,
+  .home-v3 .native-head h2,
+  .home-v3 .tools-copy h2,
+  .home-v3 .process-head h2,
+  .home-v3 .trust-copy h2,
+  .home-v3 .why-copy h2,
+  .home-v3 .audience-head h2,
+  .home-v3 .catalog-copy h2,
+  .home-v3 .faq-head h2,
+  .home-v3 .final-cta h2{
+    word-break:normal;
+    overflow-wrap:anywhere;
+    text-wrap:balance;
+  }
+  .home-v3 .hero-v3 h1{font-size:46px;line-height:1.01}
+  .home-v3 .story-copy h2,
+  .home-v3 .native-head h2,
+  .home-v3 .tools-copy h2,
+  .home-v3 .process-head h2,
+  .home-v3 .trust-copy h2,
+  .home-v3 .why-copy h2,
+  .home-v3 .audience-head h2,
+  .home-v3 .catalog-copy h2,
+  .home-v3 .faq-head h2{font-size:39px;line-height:1.1}
+  .home-v3 .final-cta h2{font-size:46px;line-height:1.04}
+}
+
+@media(max-width:460px){
+  .home-v3 .hero-v3 h1{font-size:40px}
+  .home-v3 .story-copy h2,
+  .home-v3 .native-head h2,
+  .home-v3 .tools-copy h2,
+  .home-v3 .process-head h2,
+  .home-v3 .trust-copy h2,
+  .home-v3 .why-copy h2,
+  .home-v3 .audience-head h2,
+  .home-v3 .catalog-copy h2,
+  .home-v3 .faq-head h2{font-size:36px}
+  .home-v3 .final-cta h2{font-size:42px}
+}

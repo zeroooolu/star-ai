@@ -1,0 +1,254 @@
+/* Homepage distribution network section v6
+   Inspired by the information hierarchy and logo-led motion of Ditto Music's Distribute section,
+   while preserving Star Distribution's own layout, copy and blue visual system.
+   Background artwork: "Abstract, Blue Sound Waves" by HoggyArt on Pixabay.
+   Source: https://pixabay.com/illustrations/abstract-blue-sound-waves-7399732/
+   Pixabay Content License: https://pixabay.com/service/license-summary/
+*/
+
+body.home-v3 .distribution-section{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:112px 0 72px;
+  background:
+    radial-gradient(circle at 82% 12%,rgba(65,132,255,.30),transparent 31%),
+    radial-gradient(circle at 15% 88%,rgba(28,91,218,.20),transparent 33%),
+    linear-gradient(145deg,#07101f 0%,#0a1830 48%,#0b2453 100%);
+  color:#fff;
+}
+
+body.home-v3 .distribution-section::before{
+  content:"";
+  position:absolute;
+  z-index:-2;
+  inset:auto -4% -145px 18%;
+  height:510px;
+  background-image:url("https://cdn.pixabay.com/photo/2022/08/20/18/01/abstract-7399732_1280.png");
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  background-size:cover;
+  opacity:.18;
+  mix-blend-mode:screen;
+  pointer-events:none;
+  animation:distributionWaveFloat 13s ease-in-out infinite alternate;
+}
+
+body.home-v3 .distribution-section::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(7,16,31,.97) 0%,rgba(7,16,31,.78) 34%,rgba(7,16,31,.18) 76%,rgba(7,16,31,.32) 100%),
+    linear-gradient(180deg,transparent 64%,rgba(7,16,31,.60) 100%);
+  pointer-events:none;
+}
+
+body.home-v3 .distribution-shell{position:relative}
+
+body.home-v3 .distribution-head{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(360px,.72fr);
+  gap:90px;
+  align-items:end;
+  margin-bottom:72px;
+}
+
+body.home-v3 .distribution-kicker{
+  display:inline-block;
+  margin-bottom:18px;
+  color:#87adff;
+  font-size:11px;
+  font-weight:760;
+  letter-spacing:.14em;
+}
+
+body.home-v3 .distribution-title h2{
+  margin:0;
+  max-width:720px;
+  color:#fff;
+  font-size:clamp(54px,5.4vw,78px);
+  line-height:.98;
+  letter-spacing:-.062em;
+  font-weight:750;
+}
+
+body.home-v3 .distribution-title h2 em{
+  color:#8eb5ff;
+  font-style:normal;
+}
+
+body.home-v3 .distribution-copy{padding-bottom:6px}
+body.home-v3 .distribution-copy p{
+  margin:0 0 26px;
+  color:#aab8ce;
+  font-size:15px;
+  line-height:1.82;
+}
+
+body.home-v3 .distribution-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+body.home-v3 .distribution-actions .distribution-primary,
+body.home-v3 .distribution-actions .distribution-secondary{
+  min-height:46px;
+  padding:0 17px;
+  border-radius:12px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+  font-weight:700;
+  transition:transform .18s ease,background .18s ease,border-color .18s ease;
+}
+body.home-v3 .distribution-actions .distribution-primary{
+  background:#fff;
+  color:#0b1730;
+  border:1px solid #fff;
+}
+body.home-v3 .distribution-actions .distribution-primary:hover{transform:translateY(-1px);background:#edf3ff}
+body.home-v3 .distribution-actions .distribution-secondary{
+  background:rgba(255,255,255,.04);
+  color:#dce7f8;
+  border:1px solid rgba(255,255,255,.18);
+}
+body.home-v3 .distribution-actions .distribution-secondary:hover{transform:translateY(-1px);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30)}
+
+body.home-v3 .dsp-motion{
+  position:relative;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  display:grid;
+  gap:16px;
+  padding:4px 0;
+}
+
+body.home-v3 .dsp-motion-row{
+  overflow:hidden;
+  mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);
+}
+
+body.home-v3 .dsp-motion-track{
+  --rail-gap:16px;
+  display:flex;
+  width:max-content;
+  gap:var(--rail-gap);
+  will-change:transform;
+}
+
+body.home-v3 .dsp-logo-group{
+  display:flex;
+  gap:var(--rail-gap);
+  flex:none;
+}
+
+body.home-v3 .dsp-motion-row-forward .dsp-motion-track{animation:dspRailForward 30s linear infinite}
+body.home-v3 .dsp-motion-row-reverse .dsp-motion-track{animation:dspRailReverse 34s linear infinite}
+body.home-v3 .dsp-motion:hover .dsp-motion-track{animation-play-state:paused}
+
+body.home-v3 .dsp-logo-tile{
+  width:164px;
+  height:86px;
+  padding:12px 16px 10px;
+  display:grid;
+  grid-template-rows:1fr auto;
+  place-items:center;
+  flex:none;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:18px;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 16px 38px rgba(0,0,0,.15);
+  color:#526174;
+  transition:transform .22s ease,box-shadow .22s ease,background .22s ease;
+}
+
+body.home-v3 .dsp-logo-tile:hover{
+  transform:translateY(-3px);
+  background:#fff;
+  box-shadow:0 22px 50px rgba(0,0,0,.22);
+}
+
+body.home-v3 .dsp-logo-tile img{
+  width:auto;
+  height:auto;
+  max-width:116px;
+  max-height:38px;
+  object-fit:contain;
+}
+
+body.home-v3 .dsp-logo-tile span{
+  margin-top:6px;
+  font-size:9px;
+  line-height:1;
+  color:#8a94a3;
+  white-space:nowrap;
+}
+
+body.home-v3 .distribution-stats{
+  margin-top:64px;
+  padding-top:24px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+body.home-v3 .distribution-stat{
+  min-height:74px;
+  padding:0 28px;
+  border-left:1px solid rgba(255,255,255,.12);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+body.home-v3 .distribution-stat:first-child{padding-left:0;border-left:0}
+body.home-v3 .distribution-stat strong{font-size:24px;letter-spacing:-.035em;color:#fff}
+body.home-v3 .distribution-stat span{margin-top:7px;color:#8191a9;font-size:11px}
+
+body.home-v3 .distribution-note{
+  margin:20px 0 0;
+  color:#71829d;
+  font-size:10px;
+  line-height:1.65;
+}
+
+@keyframes dspRailForward{
+  from{transform:translateX(0)}
+  to{transform:translateX(calc(-50% - 8px))}
+}
+@keyframes dspRailReverse{
+  from{transform:translateX(calc(-50% - 8px))}
+  to{transform:translateX(0)}
+}
+@keyframes distributionWaveFloat{
+  from{transform:translate3d(0,0,0) scale(1.02)}
+  to{transform:translate3d(-34px,-16px,0) scale(1.06)}
+}
+
+@media (max-width:1000px){
+  body.home-v3 .distribution-section{padding:92px 0 62px}
+  body.home-v3 .distribution-head{grid-template-columns:1fr;gap:30px;margin-bottom:54px}
+  body.home-v3 .distribution-copy{max-width:620px}
+  body.home-v3 .dsp-logo-tile{width:150px;height:80px}
+}
+
+@media (max-width:760px){
+  body.home-v3 .distribution-section{padding:76px 0 54px}
+  body.home-v3 .distribution-section::before{inset:auto -24% -110px 0;height:370px;opacity:.12}
+  body.home-v3 .distribution-head{margin-bottom:42px}
+  body.home-v3 .distribution-title h2{font-size:clamp(46px,13vw,62px)}
+  body.home-v3 .distribution-copy p{font-size:14px}
+  body.home-v3 .dsp-motion{gap:12px}
+  body.home-v3 .dsp-logo-tile{width:134px;height:72px;padding:10px 13px 8px;border-radius:15px}
+  body.home-v3 .dsp-logo-tile img{max-width:96px;max-height:31px}
+  body.home-v3 .distribution-stats{margin-top:48px;grid-template-columns:1fr}
+  body.home-v3 .distribution-stat{min-height:auto;padding:18px 0;border-left:0;border-top:1px solid rgba(255,255,255,.10)}
+  body.home-v3 .distribution-stat:first-child{border-top:0}
+}
+
+@media (prefers-reduced-motion:reduce){
+  body.home-v3 .distribution-section::before,
+  body.home-v3 .dsp-motion-track{animation:none!important}
+  body.home-v3 .dsp-logo-group[aria-hidden="true"]{display:none}
+  body.home-v3 .dsp-motion-row{overflow-x:auto;scrollbar-width:none;mask-image:none;-webkit-mask-image:none}
+  body.home-v3 .dsp-motion-row::-webkit-scrollbar{display:none}
+}

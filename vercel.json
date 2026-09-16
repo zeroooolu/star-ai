@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    { "source": "/assets/star-logo.png", "destination": "https://star.kanjian.com/app/release/images/star-logo.png" },
+    { "source": "/assets/platform-logos/:file", "destination": "https://raw.githubusercontent.com/zeroooolu/music-promotion/main/frontend/star-release/assets/platform-logos/:file" },
+    { "source": "/", "destination": "/prototype-v1/index.html" },
+    { "source": "/app", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/dashboard", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/releases", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/works", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/artists", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/analytics", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/earnings", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/billing", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/settings", "destination": "/prototype-v1/product-pages.html" },
+    { "source": "/app/releases/new", "destination": "/prototype-v1/release.html" },
+    { "source": "/platforms", "destination": "/prototype-v1/platforms.html" },
+    { "source": "/platforms.html", "destination": "/prototype-v1/platforms.html" },
+    { "source": "/pricing", "destination": "/prototype-v1/pricing.html" },
+    { "source": "/pricing.html", "destination": "/prototype-v1/pricing.html" },
+    { "source": "/release", "destination": "/prototype-v1/release.html" },
+    { "source": "/release.html", "destination": "/prototype-v1/release.html" }
+  ]
+}
